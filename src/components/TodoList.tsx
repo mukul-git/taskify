@@ -6,7 +6,6 @@ interface Props {
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
-  console.log(todos);
   return (
     <>
       <div className="todo_container">
