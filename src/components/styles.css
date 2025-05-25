@@ -1,0 +1,131 @@
+.input {
+  width: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.input_field {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input_field:focus {
+  box-shadow: 0 0 10px 1000px  #2561a2;;
+  outline: none;
+}
+
+.input_button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  font-size: 25px;
+  right: 0px;
+  border: none;
+  color: white;
+  background-color: rgb(144, 144, 235);
+  transition: 0.2s all;
+  box-shadow: 0 0 10px rgb(3, 2, 11);
+}
+
+.input_button:hover {
+  background-color: rgb(165, 165, 240);
+}
+.input_button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px rgb(3, 2, 11);
+}
+
+.todo_container {
+  z-index: 10;
+  background-color: rgb(50, 195, 205);
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 3px;
+}
+
+.todo_active {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo_active__heading {
+  padding: 20px;
+  color: azure;
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 90%;
+  text-align: center;
+}
+
+/* .todo_completed {
+    
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+} */
+/* .todo_completed__heading {
+  padding: 20px;
+  color: azure;
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 90%;
+  text-align: center;
+} */
+.single_todo {
+  width: 90%;
+  margin: 10px 13px;
+  display: flex;
+  box-shadow: 0 0 3px black;
+  border-radius: 5px;
+  background-color: rgb(213, 213, 6);
+  color: black;
+  transition: 0.2s;
+}
+
+.single_todo:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.02);
+}
+@media (max-width: 800px) {
+  .single_todo {
+    width: 90%;
+  }
+}
+
+.todo_text {
+  font-size: 25px;
+  flex: 1;
+  padding: 20px;
+}
+.todo_icons {
+  padding: 20px 5px;
+}
+.icon {
+  padding: 20px 2px;
+  margin: 0px 4px;
+}
+
+.todo_edit_text {
+  width: 100%;
+  font-size: 25px;
+  background-color: rgb(176, 229, 71);
+  border-radius: 15px;
+  outline: none;
+  border-color: rgb(176, 229, 71);
+}
