@@ -4,7 +4,6 @@ import { Todo } from "./model";
 import InputField from "./components/InputField";
 import TodoList from "./components/TodoList";
 function App() {
-  console.log("width",window.innerWidth,"height", window.innerHeight)
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
   const handleAdd = (e: React.FormEvent) => {
